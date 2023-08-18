@@ -1,0 +1,11 @@
+# udev rules for Silicon Labs dubuggers
+# The system must have a group called silabs and all users wishing to use
+# an SiLabs debugger must be added to this group.
+
+# Silicon Labs EC3
+SUBSYSTEM=="usb",ATTR{idVendor}=="10c4",ATTR{idProduct}=="8044", GROUP="silabs", MODE="660"
+
+# Silicon Labs Toolstick
+SUBSYSTEM=="usb",ATTR{idVendor}=="10c4",ATTR{idProduct}=="8253", GROUP="silabs", MODE="660"
+
+
