@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # RSSI production test
 
 import serial, sys, optparse, time, fdpexpect

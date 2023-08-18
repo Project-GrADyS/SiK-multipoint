@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # reflect input bytes to output, printing as it goes
 
 import serial, sys, optparse

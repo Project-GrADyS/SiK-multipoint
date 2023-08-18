@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # a trivial serial console
 
 import serial, sys, optparse

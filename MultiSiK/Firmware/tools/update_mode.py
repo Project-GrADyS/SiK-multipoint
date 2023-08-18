@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # put a HopeRF into update mode
 
 import serial, sys, optparse, time, fdpexpect

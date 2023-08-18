@@ -12,7 +12,7 @@ RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" |
 
 RUN apt update && apt upgrade -y
 
-RUN apt install g++ libreadline-dev libboost-regex-dev usbutils mono-complete autoconf automake libtool libudev-dev make cmake cmake-curses-gui -y
+RUN apt install g++ libreadline5-dev libboost-regex-dev usbutils libusb-dev mono-complete autoconf automake libtool libudev-dev make cmake cmake-curses-gui -y
 
 RUN cd /Python-2.4.6 && ./configure --enable-optimizations --includedir=/usr/include/tirpc/ && make && make install
 
@@ -22,11 +22,8 @@ RUN dpkg -i ./sdcc-libraries_3.5.0+dfsg-2_all.deb
 
 RUN dpkg -i ./sdcc_3.5.0+dfsg-2_amd64.deb
 
+RUN cd /ec2-new && autoreconf -i && ./configure && make
 
-RUN cd /ec2-new/build && cmake .. && make
+RUN apt install python2 python-argparse
 
-#RUN cd /libusb-1.0.20-rc1 && ./configure && make && make install
-
-#RUN cd /ec2 && autoreconf -i && ./configure
-
-RUN cd /MultiSiK && make install
+RUN cd /MultiSiK/Firmware && make install
