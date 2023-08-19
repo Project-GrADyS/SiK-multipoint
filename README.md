@@ -9,7 +9,7 @@ https://github.com/paragonRobotics/ec2-new
 https://github.com/tdnet12434/MultiSiK
 
 # Building docker image
-- in the folder, run docker build . -t multisik-docker
+- in the folder, run docker build -t multisik-docker .
 - delete the last container created
 
 # Creating the container for device reading...
