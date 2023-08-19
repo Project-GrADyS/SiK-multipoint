@@ -9,14 +9,15 @@ https://github.com/paragonRobotics/ec2-new
 https://github.com/tdnet12434/MultiSiK
 
 # Building docker image
-- in the folder, run docker build -t multisik-docker .
+- in the folder, run `docker build -t multisik-docker .`
 - delete the last container created
 
 # Creating the container for device reading...
+- With the device connected, do:
 
-docker run -t -i --device=/dev/ttyUSB0 --name <container_name> multisik-docker bash
+`docker run -t -i --device=/dev/ttyUSB0 --name <container_name> multisik-docker bash`
 
 # Enter in the terminal docker
-- docker start <container_name>
-- docker exec -it <container_name> /bin/bash
+- `docker start <container_name>`
+- `docker exec -it <container_name> /bin/bash`
 

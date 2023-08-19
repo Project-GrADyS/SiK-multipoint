@@ -12,9 +12,9 @@ RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" |
 
 RUN apt update && apt upgrade -y
 
-RUN apt install g++ libreadline5-dev libboost-regex-dev usbutils libusb-dev mono-complete autoconf automake libtool libudev-dev make cmake cmake-curses-gui -y
+RUN apt install g++ libreadline-dev libboost-regex-dev usbutils libusb-dev mono-complete autoconf automake libtool libudev-dev make cmake cmake-curses-gui -y
 
-RUN cd /Python-2.4.6 && ./configure --enable-optimizations --includedir=/usr/include/tirpc/ && make && make install
+RUN cd /usr/src/app/Python-2.4.6 && ./configure --enable-optimizations --includedir=/usr/include/tirpc/ && make && make install
 
 RUN touch ~/.bashrc
 
@@ -22,8 +22,8 @@ RUN dpkg -i ./sdcc-libraries_3.5.0+dfsg-2_all.deb
 
 RUN dpkg -i ./sdcc_3.5.0+dfsg-2_amd64.deb
 
-RUN cd /ec2-new && autoreconf -i && ./configure && make
+RUN cd /usr/src/app/ec2-new && autoreconf -i && ./configure && make
 
-RUN apt install python2 python-argparse
+RUN apt install python2 python-argparse -y
 
-RUN cd /MultiSiK/Firmware && make install
+RUN cd /usr/src/app/MultiSiK/Firmware && make install
