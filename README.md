@@ -8,6 +8,10 @@ https://github.com/paragonRobotics/ec2-new
 
 https://github.com/tdnet12434/MultiSiK
 
+https://github.com/ArduPilot/SiK/tree/master
+
+https://discuss.ardupilot.org/t/hm-trp-433mhz-sik-radios/94152/12
+
 # Building docker image
 - in the folder, run `docker build -t multisik-docker .`
 - delete the last container created
@@ -20,4 +24,7 @@ https://github.com/tdnet12434/MultiSiK
 # Enter in the terminal docker
 - `docker start <container_name>`
 - `docker exec -it <container_name> /bin/bash`
+
+# uploading firmware
+- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/dst/bootloader~hm_trp~433.hex`
 
