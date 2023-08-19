@@ -26,5 +26,7 @@ https://discuss.ardupilot.org/t/hm-trp-433mhz-sik-radios/94152/12
 - `docker exec -it <container_name> /bin/bash`
 
 # uploading firmware
-- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/dst/bootloader~hm_trp~433.hex`
+- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx`
 
+- ready hex:
+- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/multiSik_fw/MultiSik_V26_hm_trp.ih`
