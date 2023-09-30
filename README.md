@@ -30,7 +30,7 @@ https://discuss.ardupilot.org/t/hm-trp-433mhz-sik-radios/94152/12
 ## STEP 1: changing the parameters before installation
 - `nano radio/parameters.c`
 ## STEP 2: compiling .ihx images
-- run the command `make`
+- run the command `make install`
 ## STEP 3: uploading firmware
 - `./tools/uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx`
 

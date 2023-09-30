@@ -24,6 +24,6 @@ RUN cd /usr/src/app/ec2-new && autoreconf -i && ./configure && make
 
 RUN apt install python2 python-argparse -y
 
-RUN python2 get-pip.py && pip install pyserial==2.7
+RUN python2 get-pip.py && pip install pyserial==2.7 && pip install pexpect
 
 RUN cd /usr/src/app/MultiSiK/Firmware && make install
