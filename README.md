@@ -23,10 +23,18 @@ https://discuss.ardupilot.org/t/hm-trp-433mhz-sik-radios/94152/12
 
 # Enter in the terminal docker
 - `docker start <container_name>`
-- `docker exec -it <container_name> /bin/bash`
+- `docker exec -it <container_name> /bin/bash` 
 
-# uploading firmware
-- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx`
+# Installing firmware
+- Enter in MultiSiK folder: `cd /usr/src/app/MultiSiK/Firmware`
+## STEP 1: changing the parameters before installation
+- `nano radio/parameters.c`
+## STEP 2: compiling .ihx images
+- run the command `make`
+## STEP 3: uploading firmware
+- `./tools/uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx`
 
+
+### For tests:
 - ready hex:
-- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/multiSik_fw/MultiSik_V26_hm_trp.ih`
+- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/multiSik_fw/MultiSik_V26_hm_trp.ihx`
