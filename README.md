@@ -47,22 +47,21 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#differences-from-standard-image">Differences from standard image</a></li>
       </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#building-docker-image">Building docker image</a></li>
+        <li><a href="#creating-the-container">Creating the container</a></li>
+        <li><a href="#enter-in-the-terminal">Enter in the terminal</a></li>
+        <li><a href="#install-firmware">Install Firmware</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -125,6 +124,8 @@ All RT's are sent to every node by default, to send them to one node only folow 
 Example getting the parameter list from base node would be 'RTI5,0'
 
 _To see all other available AT commands, see the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
+
+_Here is the official radio [SiK Repository](https://github.com/ArduPilot/SiK)_
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -190,7 +191,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 
 
 <!-- USAGE EXAMPLES -->
-### Usage Examples
+## Usage Examples
 
 _For more examples, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
