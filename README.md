@@ -122,12 +122,8 @@ The easiest way to determin the correct node count for the network is - max(NODE
 All RT's are sent to every node by default, to send them to one node only folow the command with a comma and node id.
 Example getting the parameter list from base node would be 'RTI5,0'
 
+_For more infos, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
-
-
-
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,9 +192,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage Examples
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Usage Examples
 
 _For more examples, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
