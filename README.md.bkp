@@ -1,0 +1,44 @@
+based on the following sites and repositories
+
+https://stackoverflow.com/questions/24225647/docker-a-way-to-give-access-to-a-host-usb-or-serial-device
+
+https://github.com/tridge/ec2/issues/2
+
+https://github.com/paragonRobotics/ec2-new
+
+https://github.com/tdnet12434/MultiSiK
+
+https://github.com/ArduPilot/SiK/tree/master
+
+https://discuss.ardupilot.org/t/hm-trp-433mhz-sik-radios/94152/12
+
+# Building docker image
+- in the folder, run `docker build -t multisik-docker .`
+- delete the last container created
+
+# Creating the container for device reading...
+- With the device connected, do:
+
+`docker run -t -i --device=/dev/ttyUSB0 --name <container_name> multisik-docker bash`
+
+# Enter in the terminal docker
+- `docker start <container_name>`
+- `docker exec -it <container_name> /bin/bash` 
+
+# Installing firmware
+- Enter in MultiSiK folder: `cd /usr/src/app/MultiSiK/Firmware`
+## STEP 1: changing the parameters before installation
+- `nano radio/parameters.c`
+## STEP 2: compiling .ihx images
+- run the command `make install`
+## STEP 3: uploading firmware
+- `./tools/uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx`
+
+
+### For tests:
+- ready hex:
+- `./uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/multiSik_fw/MultiSik_V26_hm_trp.ihx`
+
+### EXAMPLES:
+- some examples with flight tests can be found in the following spreadsheet:
+- https://docs.google.com/spreadsheets/d/1xMP8dMGkIPPJdYIWrom84b4NRgzgUPgrNlQ3gqbemEs/edit?usp=sharing
