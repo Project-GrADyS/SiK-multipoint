@@ -18,7 +18,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/ArduPilot_logo.svg/2560px-ArduPilot_logo.svg.png" alt="Logo" width="270" height="44">
   </a>
 
@@ -200,7 +200,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
