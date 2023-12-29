@@ -192,6 +192,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 
 <!-- USAGE EXAMPLES -->
 ## Usage Examples
+- some tests with flight examples can be found in [this spreadsheet](https://docs.google.com/spreadsheets/d/1xMP8dMGkIPPJdYIWrom84b4NRgzgUPgrNlQ3gqbemEs/edit?usp=sharing):
 
 _For more examples, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
