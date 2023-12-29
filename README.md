@@ -186,9 +186,9 @@ _obs: to check your container name, run `docker -ps -a`_
    ```sh
    make install
    ```
-3. uploading firmware
+3. uploading firmware: choose the .ihx of your radio model in the obj folder and run the uploader program as in the hm_trp example below:
    ```sh
-   ./tools/uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx
+   /usr/src/app/MultiSiK/Firmware/tools/uploader.py --resetparams --port /dev/ttyUSB0 /usr/src/app/MultiSiK/Firmware/obj/hm_trp/radio~hm_trp/radio~hm_trp.ihx
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -234,4 +234,4 @@ Johan Rocha - johanmarcos50@gmail.com
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/johan-rocha-4a8224226/
-[product-screenshot]: https://ae01.alicdn.com/kf/H351ed377a9b147d2941c025c4ff60d78V.png_640x640.png_.webp
+[product-screenshot]: https://i.imgur.com/hjiYkJA.png
