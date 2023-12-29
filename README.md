@@ -97,6 +97,8 @@ See the user documentation above for a list of current firmware features
 ## Multipoint Support - Differences from standard image
 ### New AT Variables
 
+The AT commands, which stand for "Attention" commands, are a set of instructions used for controlling and communicating with various devices, particularly communication modules such as GSM, GPRS, and other modems. These commands are sent to the device through a communication interface, typically serial communication. Here are new commands used for multipoint firmware:
+
 ###### S15: NODEID
 MUST be a unique ID on the network, otherwise cross talk will occur
 Base ID is defined by setting to 0, this is the node that keeps the network in sync with all other nodes.
@@ -122,7 +124,7 @@ The easiest way to determin the correct node count for the network is - max(NODE
 All RT's are sent to every node by default, to send them to one node only folow the command with a comma and node id.
 Example getting the parameter list from base node would be 'RTI5,0'
 
-_For more infos, please refer to the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
+_To see all other available AT commands, see the [Documentation](https://ardupilot.org/copter/docs/common-3dr-radio-advanced-configuration-and-technical-information.html)_
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -152,10 +154,6 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 2. In the folder, run
    ```sh
    docker build -t multisik-docker .
-   ```
-#. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 ### Creating the container for device reading...
