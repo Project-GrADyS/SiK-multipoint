@@ -54,12 +54,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#building-docker-image">Building docker image</a></li>
-        <li><a href="#creating-the-container">Creating the container</a></li>
-        <li><a href="#enter-in-the-terminal">Enter in the terminal</a></li>
-        <li><a href="#install-firmware">Install Firmware</a></li>
+        <li><a href="#creating-the-container-for-device-reading">Creating the container</a></li>
+        <li><a href="#enter-in-the-terminal-docker">Enter in the terminal</a></li>
+        <li><a href="#installing-firmware">Install Firmware</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage-examples">Usage Examples</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -157,7 +157,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
    docker build -t multisik-docker .
    ```
 
-### Creating the container for device reading...
+### Creating the container for device reading
 1. With the device connected, do:
    ```sh
    docker run -t -i --device=/dev/ttyUSB0 --name <container_name> multisik-docker bash
