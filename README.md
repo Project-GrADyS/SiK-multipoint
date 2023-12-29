@@ -174,9 +174,13 @@ _obs: to check your container name, run `docker -ps -a`_
    docker exec -it <container_name> /bin/bash
    ```
 ### Installing firmware
+1. Enter in folder firmware
+   ```sh
+   cd /usr/src/app/MultiSiK/Firmware
+   ```
 1. changing the parameters before installation
    ```sh
-   nano radio/parameters.c
+   nano /usr/src/app/MultiSiK/Firmware/radio/parameters.c
    ```
 2. compiling .ihx images
    ```sh
