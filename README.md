@@ -158,17 +158,18 @@ _Building a Docker image is a crucial step in the process of containerizing and 
    ```
 
 ### Creating the container for device reading
-1. With the device connected, do:
+1. With the device connected, run the command below, where `<container_name>` will be the name of your container:
    ```sh
    docker run -t -i --device=/dev/ttyUSB0 --name <container_name> multisik-docker bash
    ```
+_obs: to check your container name, run `docker -ps -a`_
 
 ### Enter in the terminal docker
-1. Start container
+- With **SiK radio and ftdi connected to the computer**, run the command below to start the container
    ```sh
     docker start <container_name>
    ```
-2. open container terminal
+- if the container is already running and the terminal is not appearing:
    ```sh
    docker exec -it <container_name> /bin/bash
    ```
@@ -229,4 +230,4 @@ Johan Rocha - johanmarcos50@gmail.com
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/johan-rocha-4a8224226/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://ae01.alicdn.com/kf/H351ed377a9b147d2941c025c4ff60d78V.png_640x640.png_.webp
