@@ -150,7 +150,7 @@ _Building a Docker image is a crucial step in the process of containerizing and 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/johan-rocha/SiK-multipoint
+   git clone https://github.com/Project-GrADyS/SiK-multipoint
    ```
 2. In the folder, run
    ```sh
